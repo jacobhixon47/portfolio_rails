@@ -12,7 +12,7 @@ A simple portfolio application that shows my most recent 6 repositories.
 
 1. _Clone into repository located at https://github.com/jacobhixon47/pdx_hot_chicken.git ._
 2. _In the root directory, create a file called '.env' and insert your GitHub Personal Access Token in this format:
-  * _GITHUB_TOKEN=<your_token_here>_
+  * _GITHUB_TOKEN=your_token_here_
 3. _In the terminal, make sure you are inside of the project folder, then type the following commands:_
   * `$ bundle install`
   * `$ rake db:create`

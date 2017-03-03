@@ -1,0 +1,7 @@
+if ($('body').hasClass('main-theme')) {
+  $('body').removeClass('main-theme');
+  $('body').addClass('alt-theme');
+} else if ($('body').hasClass('alt-theme')) {
+  $('body').removeClass('alt-theme');
+  $('body').addClass('main-theme');
+}

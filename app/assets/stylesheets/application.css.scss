@@ -15,18 +15,33 @@
  @import "bootstrap";
 
 $base_green : #49B56A;
+body {
+  background-color: #444;
+  color: #ddd;
+}
 
+.landing-section {
+  height: 100vh;
+  width: auto;
+  background: linear-gradient( 40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), image-url('bridge-bg.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5%;
+}
 nav.navbar {
   padding-right: 1%;
-  background-color: $base_green !important;
+  background-color: rgba(100, 100, 100, 0.2) !important;
   border: none;
   border-radius: 0px;
+  margin-bottom: 0px;
 }
 
 .nav-list li a, .navbar-brand {
- color: #fff !important;
+ color: #eee !important;
 }
 
 .nav-list li a:hover, .navbar-brand:hover {
- color: #ddd !important;
+ color: #333 !important;
 }

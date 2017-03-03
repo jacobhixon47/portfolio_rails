@@ -1,1 +1,16 @@
-<h1>Home Works!</h1>
+<div class="row landing-section">
+  <div class="overlay">
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <h1>Recently Updated Repositories</h1>
+      <% @first_six.each do |repo| %>
+        <div class="col-sm-4 repo-column">
+          <%= link_to repo["name"], repo["html_url"] %><br>
+          <%= repo["description"] %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -15,12 +15,13 @@
  @import "bootstrap";
 
 $base_green : #49B56A;
+
 body {
   background-color: #444;
   color: #ddd;
 }
 
-.landing-section {
+.main-theme {
   height: 100vh;
   width: auto;
   background: linear-gradient( 40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), image-url('bridge-bg.jpg');
@@ -44,4 +45,41 @@ nav.navbar {
 
 .nav-list li a:hover, .navbar-brand:hover {
  color: #333 !important;
+}
+
+.about-column {
+  color: #ccc;
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+.repo-column {
+  color: #ccc;
+  height: 20vh;
+  width: 31%;
+  background-color: rgba(50, 50, 50, 0.6);
+  margin: 1%;
+}
+
+.repo-column:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+  color: #aaa;
+  text-decoration: none;
+}
+
+.alt-theme {
+  background: linear-gradient( 40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), image-url('pinecone-bg.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 5%;
+  color: $base_green;
+}
+
+.alt-theme .row .repo-column, .alt-theme .row .about-column {
+  color: $base_green;
+}
+
+.alt-theme .nav-list li a {
+ color: $base_green !important;
 }

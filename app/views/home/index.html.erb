@@ -1,15 +1,14 @@
-<div class="row landing-section">
-  <div class="overlay">
-
-  </div>
+<div class="row">
   <div class="container">
     <div class="row">
-      <h1>Recently Updated Repositories</h1>
-      <% @first_six.each do |repo| %>
-        <div class="col-sm-4 repo-column">
-          <%= link_to repo["name"], repo["html_url"] %><br>
-          <%= repo["description"] %>
-        </div>
+      <h1>Recently Updated GitHub Projects</h1><hr>
+      <% @parsed_response[0..8].each do |repo| %>
+        <%= link_to repo["html_url"], target: :_blank do %>
+          <div class="col-sm-4 repo-column">
+            <h2><%= repo["name"] %></h2><br>
+            <p><%= repo["description"] %></p>
+          </div>
+        <% end %>
       <% end %>
     </div>
   </div>

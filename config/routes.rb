@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/' => 'home#index'
+  get '/about' => 'home#about'
 
   devise_for :users, :controllers => { :registrations => "registrations" }
 
